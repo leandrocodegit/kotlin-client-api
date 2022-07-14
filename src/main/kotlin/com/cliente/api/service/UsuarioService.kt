@@ -39,6 +39,7 @@ class UsuarioService(
     }
 
     fun updateStatusUsuario(id: Long, statusUsuario: StatusUsuario): Usuario{
+        print("Update jira")
        var user: Usuario = buscarUsuarioById(id)
         if(statusUsuario.status == user.isActive)
         when(user.isActive){
